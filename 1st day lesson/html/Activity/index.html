@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Pizza Order Form</legend>
+            <div class="customerInfo">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="Enter your first name"><br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required placeholder="Enter your last name"><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required placeholder="Enter your contact number"><br><br>
+            </div>
+            <div class="orderDetails">
+                <label for="delivery">Preferred Delivery Date:</label>
+                <input type="date" id="delivery" name="delivery" required><br><br>
+
+                <label >Size:</label>
+                <div class="size-options">
+                    <input type="radio" id="small" name="size" value="small" required>
+                    <label for="small">Small</label>
+
+                    <input type="radio" id="medium" name="size" value="medium" required>
+                    <label for="medium">Medium</label>
+                    
+                    <input type="radio" id="large" name="size" value="large" required>
+                    <label for="large">Large</label>
+                </div>
+                <label >Flavor:</label><br>
+                <input type="checkbox" id="hawaiian" name="flavor" value="hawaiian" required>
+                <label for="hawaiian" style="margin-left: 3px">Hawaiian (Php 150.00)</label>
+                <select name="Hawaiian-Count" id="Hawaiian-Count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+                <input type="checkbox" id="pepperoni" name="flavor" value="pepperoni" required>
+                <label for="pepperoni">Pepperoni (Php 140.00)</label>
+                <select name="pepperoni-Count" id="pepperoni-Count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+                <input type="checkbox" id="vegetable" name="flavor" value="vegetable" required>
+                <label for="vegetable">Vegetable (Php 130.00)</label> 
+                <select name="vegetable-Count" id="vegetable-Count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br><br>
+            </div>
+            <div class="paymentInfo">
+                <label for="ccnumber">Credit Card Number:</label>
+                <input type="text" id="ccnumber" name="ccnumber" required placeholder="Enter your credit card number"><br><br>
+                <label for="pin">PIN:</label>
+                <input type="password" id="pin" name="pin" required placeholder="Enter your PIN"><br><br>
+                <label for="note">Additional Note:</label><br>
+                <textarea id="note" name="note" rows="4" cols="50" placeholder="Add any additional notes here"></textarea><br><br>
+            </div>
+            <input type="submit" value="Submit Order">
+        </fieldset>
+    </form>
+</body>
+</html>
