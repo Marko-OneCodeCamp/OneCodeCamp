@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid border border-dark bg-dark d-flex justify-content-center"><header class="container border border-dark text-white text-center m-2"><h1>Activity</h1></header>
+    </div>
+
+    <div class="container-fluid">
+        <br>
+        <div class="container"><h1>Background Utilities</h1></div>
+        <div class="container bg-primary text-white p-3">This is default primary background</div>
+        <div class="container bg-secondary text-white p-3 bg-opacity-75">This is 75% opacity -secondary background</div>
+        <div class="container bg-info text-white p-3 bg-opacity-50">This is 50% opacity -secondary background</div>
+        <div class="container bg-danger text-white p-3 bg-opacity-25">This is 25% opacity -secondary background</div>
+        <div class="container bg-success text-dark p-3 bg-opacity-10">This is 10% opacity -secondary background</div>
+    </div>
+
+ 
+
+     <div class="container-fluid">
+            <br>
+            <div class="container"><h1>Border Utilities</h1></div>
+            <br>
+            <div class="container d-flex bg-secondary bg-opacity-50 p-5 justify-content-center">
+
+                <div class="m-5 border-3 bg-white"><span class=" border-top border-primary border-bottom bg-white p-5"> </span></span></div>
+                <div class="m-5 bg-white   "> <span class=" rounded-circle border-danger border border-3   bg-white p-5 "> </span></span></div>
+                <div class="m-5 bg-white"> <span class="border-3 bg-white  p-5 border-top border-primary border-start border-bottom"> </span></span></div>
+            </div>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <div class="container"><h1>Color Utilities</h1></div>
+        <br>
+        <div class="container">
+            <div class="bg-primary bg-opacity-25 p-5 d-flex justify-content-center">
+
+                <table class="table table-striped table-dark text-white table-bordered">
+                        <tr class="bg-dark text-white border-2 border border-white table-str">
+                            <th class="p-1 text-white border-white">Result</th>
+                            <th class="text-white">Class Utilities</th>
+                        </tr>
+
+                        <tr class="bg-dark text-white  border border-white table-str">
+                            <td class="text-primary">Primary Default text</td>
+                            <td>text-primary</td>
+                            
+                        </tr>
+
+                        <tr class=" text-white  border border-white table-str">
+                            <td class="text-danger text-opacity-50">Danger with 50% opacity</td>
+                            <td>text-danger text-opacity-50</td>
+                            
+                        </tr>
+                        <tr class=" text-white border border-white table-str">
+                            <td class="text-success text-opacity-25">success with 25% opacity</td>
+                            <td>text-success text-opacity-25</td>
+                            
+                        </tr>
+                        <tr class=" text-white border border-white table-str">
+                            <td class="text-light text-opacity-75">success with 75% opacity</td>
+                            <td>text-light text-opacity-75</td>
+                            
+                        </tr>
+                        <tr class=" text-white border border-white table-str">
+                            <td class="text-muted">This is text muted</td>
+                            <td>Text-muted</td>
+                            
+                        </tr>
+
+                    </table>
+
+            </div>
+
+        <div>
+
+    </div>
+
+   
+
+
+
+<br><br><br>
+
+
+
+
+
+<div class="container-fluid">
+    <br>
+    <div class="container"><h1>Display Utilities</h1></div>
+    <br>
+    <div class="container"><p>Display Block vs Block</p>
+        <div class="bg-primary p-2 bg-opacity-50">
+            <img class="d-inline-block" src="./img/shib.jpg" alt="shib" height="100px" width="100px">
+            <img src="./img/cat.jpeg" alt="shib" height="100px" width="100px">
+        </div>
+        <div class="bg-secondary p-2 bg-opacity-50 border">
+            <img class="d-block" src="./img/shib.jpg" alt="shib" height="100px" width="100px">
+        </div>
+        <div class="bg-secondary p-2 bg-opacity-50">
+            <img class="d-block" src="./img/cat.jpeg" alt="shib" height="100px" width="100px">
+        </div>
+        <p>Hide First Image Only</p>
+        <div class="bg-success p-2 bg-opacity-50 ">
+            <img class="d-none d-md-inline-block " src="./img/shib.jpg" alt="shib" height="100px" width="100px">
+            <img class="d-block" src="./img/cat.jpeg" alt="shib" height="100px" width="100px">
+        </div>
+        <p>visible two image in medium screen only</p>
+        <div class="bg-danger p-2 ">
+            <img class="d-none d-md-inline-block d-lg-none " src="./img/shib.jpg" alt="shib" height="100px" width="100px">
+            <img class="d-none d-md-inline-block d-lg-none " src="./img/cat.jpeg" alt="shib" height="100px" width="100px">
+        </div>
+        <p>2nd image visible only in small screen</p>
+        <div class="bg-dark p-2 mb-5 ">
+            <img class="d-none d-md-inline-block d-lg-block " src="./img/shib.jpg" alt="shib" height="100px" width="100px">
+            <img class="d-sm-inline-block d-md-none d-lg-none " src="./img/cat.jpeg" alt="shib" height="100px" width="100px">
+        </div>
+    </div>
+</div>
+</body>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</html>
