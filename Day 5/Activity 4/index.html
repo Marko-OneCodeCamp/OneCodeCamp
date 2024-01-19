@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <h1 class="text-center">Exercise1</h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary"  onclick="show()" >Get List</button>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center border border-1 w-50 h-50 mt-5" id="exercise1">
+            <ol class="list-group" id="printOrders">
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h1 class="text-center">Exercise2</h1>
+        <div class="d-flex justify-content-center flex-collumn align-items-center">
+            <button class="btn btn-primary"  onclick="print_cards(cards)" >Display Cards</button>
+        </div>
+        <div class="container d-flex  border border-1 w-75 h-75 mt-5  flex-column" id="exercise2">
+            <p>List of keys in the array:</p>
+            <ol class="list-group" id="printCards">
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h1 class="text-center">Exercise3</h1>
+        <div class="d-flex justify-content-center flex-collumn align-items-center">
+            <button class="btn btn-primary"  onclick="displayMsg(randomScore);" >Show Score</button>
+        </div>
+        <div class="container d-flex  border border-1 w-75 h-75 mt-5  flex-column" id="karaokeResult" >
+        </div>
+    </section>
+    <section class="mb-5">
+        <h1 class="text-center">Exercise4</h1>
+        <div class="d-flex justify-content-center flex-collumn align-items-center">
+            <button class="btn btn-primary"  onclick="main();" >Show Score</button>
+        </div>
+        <div class="container d-flex  border border-1 w-75 h-75 mt-5  flex-column mb-5" id="result" >
+        </div>
+    </section>
+    <section class="mb-5">
+        <h1 class="text-center">Exercise5</h1>
+        <div class="d-flex justify-content-center flex-collumn align-items-center">
+            <button class="btn btn-primary"  onclick="convert_to_blanks(sample);" >Show Score</button>
+        </div>
+        <div class="container d-flex  border border-1 w-75 h-75 mt-5  flex-column mb-5" id="result" >
+        </div>
+    </section>
+    
+
+<script src="./js/main.js"></script>
+</body>
+</html>
