@@ -1,6 +1,35 @@
 .App {
   text-align: center;
 }
+.comments{
+  background-color: white;
+  width: 50%;
+  
+  color: rgb(0, 0, 0);
+}
+.comment-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* border-radius: 10px; */
+  margin-bottom: 2px;
+}
+.profile-pic{
+  height: 105px;
+  border-radius: 2%;
+  width: 100px;
+  margin-right: 5px;
+}
+.timestamp{
+  color: grey;
+  font-size: small;
+  margin-left: 20px;
+}
+.text-container{
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
 
 .App-logo {
   height: 40vmin;

@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 const ClockDyna = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
     useEffect(() => {
-    const intervalId = setInterval(() => {
+    const updateTime = setInterval(() => {
         setCurrentTime(new Date());
     }, 1000);
-    return () => clearInterval(intervalId);
+    return () => clearInterval(updateTime);
     }, []); 
     const showTime = currentTime.toLocaleTimeString();
     return (

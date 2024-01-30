@@ -1,0 +1,24 @@
+
+[
+    {
+        "id": 1,
+        "username": "Mr.Batman",
+        "text": "Mekus Mekus Insan",
+        "timestamp": 1643587200000, 
+        "profilePic": "batman.jpg"
+    },
+    {
+        "id": 2,
+        "username": "Superman",
+        "text": "Mekus Mekus Insan",
+        "timestamp": 1643587210000, 
+        "profilePic": "superman.jpg"
+    },
+    {
+        "id": 3,
+        "username": "WonderW",
+        "text": "Nice discussion!",
+        "timestamp": 1643587220000, 
+        "profilePic": "wonderwoman.jpg"
+    }
+]
