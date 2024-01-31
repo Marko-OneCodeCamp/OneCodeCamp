@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    color: grey;
+}
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatAndShrink 6s linear forwards;
+    background-color: var(--bubble-color, hsl(204, 70%, 53%));
+}
+
+#pink{
+    background-color: pink;
+    border: 2px solid pink;
+}
+#blue{
+    background-color: blue;
+    border: 2px solid blue;
+}
+#purple{
+    background-color: purple;
+    border: 2px solid Purple;
+}
+#reset{
+    background-color: white;
+    border: 2px solid black;
+}
+
+#pink, #blue,#purple,#reset {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+}
+
+#pink:hover, #blue:hover, #purple:hover, #reset:hover {
+    transform: scale(1.2);
+}
+
+@keyframes floatAndShrink {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-500px) scale(0);
+        opacity: 0;
+    }
+}

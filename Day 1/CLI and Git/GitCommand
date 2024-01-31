@@ -1,0 +1,6 @@
+git checkout branchname -switching branch 
+git branch brancname -making new branch 
+
+git fetch origin: Fetches the latest changes from the remote repository (origin).
+git checkout main: Switches to your local main branch.
+git pull origin main: Pulls the latest changes from the remote main branch and updates your local branch.

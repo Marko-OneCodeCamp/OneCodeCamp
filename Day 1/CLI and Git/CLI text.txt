@@ -1,0 +1,34 @@
+# Change directory
+cd /path/to/directory
+
+# List files and directories
+ls
+
+# Print current working directory
+pwd
+
+# Create a new directory
+mkdir new_directory
+
+# Create a new file
+touch new_file.txt/ echo > new_file.txt
+
+# Remove a file
+rm file.txt
+
+# Create a directory
+mkdir directory_name
+
+# Rename a file or directory
+mv old_name new_name
+
+# Copy a file or directory
+cp source destination
+
+# Move a file or directory
+mv source destination
+GIt commands:
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git init
