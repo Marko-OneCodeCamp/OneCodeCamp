@@ -10,7 +10,7 @@ export default function QuoteFetcher() {
     useEffect(() => {
         fetchQuote();
     }, []);
-    
+
     async function fetchQuote() {
         const response = await fetch(RANDOM_QUOTE_URL);
         const jsonResponse = await response.json();
@@ -18,7 +18,7 @@ export default function QuoteFetcher() {
         setQuote(randomQuote);
         setIsGlowing(false); 
     }
-
+    
     const handleGlowButtonClick = () => {
         setIsGlowing(!isGlowing);
     };
@@ -34,7 +34,6 @@ export default function QuoteFetcher() {
             </div>
             <h1>{quote.text}</h1>
             <h3>{quote.author}</h3>
-            
         </div>
     );
 }

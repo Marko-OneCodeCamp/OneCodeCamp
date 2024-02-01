@@ -1,0 +1,10 @@
+.App-header.glow h1{
+    text-shadow: 0 0 10px rgba(252, 248, 170, 0.7), 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+
+.App-header.glow h3 {
+    text-shadow: 0 0 10px rgba(43, 245, 225, 0.7), 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3);
+}
