@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Main = () => {
   return (
-    <div>
-      <main>
+    <div className='mb-5'>
+      <main className='mb-5'>
         <div id="myCarousel" className="carousel slide mb-6" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -11,8 +11,8 @@ const Main = () => {
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+          <div className="carousel-item active">
+              <img src={'../assets/img/full.jpg'} className="d-block w-100 h-100 object-fit-cover border rounded" alt="Project Highlight" />
               <div className="container">
                 <div className="carousel-caption text-start">
                   <h1>Project highlight</h1>
@@ -22,7 +22,7 @@ const Main = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <img src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="d-block w-100 object-fit-cover border rounded" alt="Project Highlight" />
               <div className="container">
                 <div className="carousel-caption">
                   <h1>Another example of Project.</h1>
@@ -32,7 +32,7 @@ const Main = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <img src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="d-block w-100 object-fit-cover border rounded" alt="Project Highlight" />
               <div className="container">
                 <div className="carousel-caption text-end">
                   <h1>Services Offered as Web Dev</h1>
@@ -55,19 +55,20 @@ const Main = () => {
           <div className="row">
             <h1 className="text-center mb-5 text-secondary" id='Services'>SERVICES OFFERED</h1>
             <div className="col-lg-4">
-              <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="https://digiviewtechnologies.com/wp-content/uploads/2022/06/Front-End.png" className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Front End Service" />
               <h2 className="fw-normal">Front End</h2>
               <p>Tech Stack - HTML, CSS, JS, Bootstrap, Tailwind, and Frameworks</p>
               <p><Link className="btn btn-warning" href="#">See Projects</Link></p>
             </div>
+
             <div className="col-lg-4">
-              <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <img src="https://appslanka.lk/storage/images/8ca6b17d8e2b6d5565e2a37c07becd93.jpg" className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Front End Service" />
               <h2 className="fw-normal">Back End</h2>
               <p>Tech Stack - Node.js, Express, MongoDB, MySQL, Mongoose, PHP, Python</p>
               <p><Link className="btn btn-warning" href="#">See Projects</Link></p>
             </div>
             <div className="col-lg-4">
-              <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <img src="https://images-platform.99static.com/XzzJBjIObP5KhDx9MUfD0ulacXo=/500x500/top/smart/99designs-contests-attachments/28/28810/attachment_28810462" className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Front End Service" />
               <h2 className="fw-normal">FullStack</h2>
               <p>Combination of Front and Back end technology with Hosting and cloud Tech</p>
               <p><Link className="btn btn-warning" href="#">See Projects</Link></p>
@@ -77,34 +78,33 @@ const Main = () => {
           <h1 className="text-center mb-5 text-secondary" id='Projects'>PROJECTS</h1>
           <div className="row featurette">
             <div className="col-md-7">
-              <h2 className="featurette-heading fw-normal lh-1">Lorem ipsum dolor sit amet. <span className="text-body-secondary">It’ll blow your mind.</span></h2>
-              <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis neque tempora cum placeat ducimus rem expedita perspiciatis id deserunt. Aliquam?</p>
+              <h2 className="featurette-heading fw-normal lh-1">Front End Development. <span className="text-body-secondary">Creating User Interfaces.</span></h2>
+              <p className="lead">Building engaging and responsive front-end experiences using technologies like HTML, CSS, JavaScript, Bootstrap, Tailwind, and various frameworks.</p>
             </div>
             <div className="col-md-5">
-              <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+              <img src="https://bitnetservices.uk/image/cache/catalog/5faac36a1e54ec6b1d7e7a93c5f169b71aa1d07d-500x500.png" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" alt="Front End Development" />
             </div>
           </div>
           <hr className="featurette-divider" />
           <div className="row featurette">
-            <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading fw-normal lh-1">Lorem ipsum dolor sit amet. <span className="text-body-secondary">See for yourself.</span></h2>
-              <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, voluptatum itaque? At cum laudantium vero explicabo fugit debitis doloribus! Ipsam!</p>
+          <div className="col-md-7 order-md-2">
+                <h2 className="featurette-heading fw-normal lh-1">Back End Development. <span className="text-body-secondary">Powering the Server Side.</span></h2>
+                <p className="lead">Crafting robust server-side applications and databases using technologies such as Node.js, Express, MongoDB, MySQL, Mongoose, PHP, and Python. Explore the world of back-end development and ensure seamless functionality and data management for your applications.</p>
             </div>
             <div className="col-md-5 order-md-1">
-              <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/343860989/SJ/JM/LF/4192572/back-end-development-service-500x500.jpg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" alt="Front End Development" />
             </div>
           </div>
           <hr className="featurette-divider" />
           <div className="row featurette">
-            <div className="col-md-7">
-              <h2 className="featurette-heading fw-normal lh-1">Lorem ipsum dolor sit amet. <span className="text-body-secondary">Contact Me.</span></h2>
-              <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis beatae eos harum quae nesciunt odio deleniti suscipit, officia quam?</p>
-            </div>
+          <div className="col-md-7">
+              <h2 className="featurette-heading fw-normal lh-1">Fullstack Development. <span className="text-body-secondary">Bringing Front and Back Ends Together.</span></h2>
+              <p className="lead">Embarking on the journey of fullstack development, integrating both front-end and back-end technologies harmoniously. Leverage the synergy of diverse technologies, ensuring a comprehensive and seamless user experience. Dive into the world of fullstack development and explore the art of building end-to-end solutions.</p>
+          </div>
             <div className="col-md-5">
-              <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            <img src="https://www.eligocs.com/wp-content/uploads/2022/06/ful-lstack-developer-01.png" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" alt="Front End Development" />
             </div>
             <div className="your-class">
-         
             </div>
           </div>
           <hr className="featurette-divider" />

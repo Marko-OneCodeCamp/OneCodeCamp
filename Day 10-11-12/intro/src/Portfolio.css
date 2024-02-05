@@ -19,7 +19,9 @@ body {
     height: 32rem;
   }
   
-  
+  .carousel-caption{
+    text-shadow: 2px 2px 8px  #3b3a3a;
+  }
   
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;

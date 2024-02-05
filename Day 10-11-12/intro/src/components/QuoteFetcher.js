@@ -19,18 +19,10 @@ export default function QuoteFetcher() {
         setIsGlowing(false); 
     }
     
-    const handleGlowButtonClick = () => {
-        setIsGlowing(!isGlowing);
-    };
+
     return (
         <div className={`App-header ${isGlowing ? "glow" : ""}`}>
             <div>
-                <button className="btn btn-lg btn-light mx-2" onClick={fetchQuote}>
-                Get Quote
-                </button>
-                <button className="btn btn-lg btn-info text-dark" onClick={handleGlowButtonClick}>
-                    {isGlowing ? "Stop Glowing" : "Make Glow"}
-                </button>
             </div>
             <h1>{quote.text}</h1>
             <h3>{quote.author}</h3>
